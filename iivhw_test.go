@@ -19,7 +19,7 @@ var iivhwtests = []struct {
 			TrueHeading:      140,
 			MagneticHeading:  134,
 			SpeedKnots:       5.23,
-			SpeedKMH:         9.68,
+			SpeedKPH:         9.68,
 		},
 	},
 	{

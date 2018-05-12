@@ -16,13 +16,15 @@ var iidbttests = []struct {
 		name: "good sentence",
 		raw:  "$IIDBT,038.94,f,011.87,M,006.41,F*2B",
 		msg: IIDBT{
-			Depth:   11.87,
+			DepthFeet:     38.94,
+			DepthMeters:   11.87,
+			DepthFathoms:  6.41,
 		},
 	},
 	{
 		name: "invalid metric depth",
 		raw:  "$IIDBT,038.94,f,A,M,006.41,F*7B",
-		err:  "nmea: IIDBT invalid depth: A",
+		err:  "nmea: IIDBT invalid depth (m): A",
 	},
 }
 

@@ -16,13 +16,13 @@ var iimtwtests = []struct {
 		name: "good sentence",
 		raw:  "$IIMTW,10.5,C*17",
 		msg: IIMTW{
-			Temperature:   10.5,
+			WaterTemperature:   10.5,
 		},
 	},
 	{
 		name: "invalid temperature",
 		raw:  "$IIMTW,A,C*4C",
-		err:  "nmea: IIMTW invalid temperature: A",
+		err:  "nmea: IIMTW invalid water temperature (C): A",
 	},
 }
 

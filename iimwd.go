@@ -12,7 +12,7 @@ type IIMWD struct {
 	TrueWindDirection      float64
 	MagneticWindDirection  float64
 	WindSpeedKnots         float64
-	WindSpeedMS            float64
+	WindSpeedMPS           float64
 }
 
 // The direction from which the wind blows across the earth’s surface, with respect to north,
@@ -25,8 +25,8 @@ func newIIMWD(s BaseSentence) (IIMWD, error) {
 		BaseSentence:           s,
 		TrueWindDirection:      p.Float64(0, "true wind direction"),
 		MagneticWindDirection:  p.Float64(2, "magnetic wind direction"),
-		WindSpeedKnots:         p.Float64(4, "wind speed knots"),
-		WindSpeedMS:            p.Float64(6, "wind speed km/s"),
+		WindSpeedKnots:         p.Float64(4, "wind speed (knots)"),
+		WindSpeedMPS:           p.Float64(6, "wind speed (m/s)"),
 	}, p.Err()
 }
 

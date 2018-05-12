@@ -8,16 +8,16 @@ const (
 // IIMTW represents water temperature.
 type IIMTW struct {
 	BaseSentence
-	Temperature   float64
+	WaterTemperature   float64
 }
 
 // $IIMTW,10.5,C*17
-// Temp always in degrees Celsius
+// Water temperature always in degrees Celsius
 func newIIMTW(s BaseSentence) (IIMTW, error) {
 	p := newParser(s, PrefixIIMTW)
 	return IIMTW{
-		BaseSentence:  s,
-		Temperature:   p.Float64(0, "temperature"),
+		BaseSentence:      s,
+		WaterTemperature:  p.Float64(0, "water temperature (C)"),
 	}, p.Err()
 }
 

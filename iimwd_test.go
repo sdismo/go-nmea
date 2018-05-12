@@ -19,13 +19,13 @@ var iimwdtests = []struct {
 			TrueWindDirection:      276.94,
 			MagneticWindDirection:  270.84,
 			WindSpeedKnots:         6.47,
-			WindSpeedMS:            3.33,
+			WindSpeedMPS:           3.33,
 		},
 	},
 	{
 		name: "invalid wind speed knots",
 		raw:  "$IIMWD,276.94,T,270.84,M,A,N,03.33,M*2F",
-		err:  "nmea: IIMWD invalid wind speed knots: A",
+		err:  "nmea: IIMWD invalid wind speed (knots): A",
 	},
 }
 

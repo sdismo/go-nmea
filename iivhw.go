@@ -11,7 +11,7 @@ type IIVHW struct {
 	TrueHeading      float64
 	MagneticHeading  float64
 	SpeedKnots       float64
-	SpeedKMH         float64
+	SpeedKPH         float64
 }
 
 // $IIVHW,140,T,134,M,05.23,N,09.68,K*55
@@ -22,8 +22,8 @@ func newIIVHW(s BaseSentence) (IIVHW, error) {
 		BaseSentence:     s,
 		TrueHeading:      p.Float64(0, "true heading"),
 		MagneticHeading:  p.Float64(2, "magnetic heading"),
-		SpeedKnots:       p.Float64(4, "speed knots"),
-		SpeedKMH:         p.Float64(6, "speed km/h"),
+		SpeedKnots:       p.Float64(4, "speed (knots)"),
+		SpeedKPH:         p.Float64(6, "speed (km/h)"),
 	}, p.Err()
 }
 
