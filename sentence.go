@@ -112,6 +112,8 @@ func Parse(raw string) (Sentence, error) {
 		return newIIMWD(s)
 	case PrefixIIVHW:
 		return newIIVHW(s)
+	case PrefixIIVTG:
+		return newIIVTG(s)
 	default:
 		return nil, fmt.Errorf("nmea: sentence type '%s' not implemented", s.Type)
 	}
