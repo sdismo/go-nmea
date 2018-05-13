@@ -16,9 +16,9 @@ var iidbttests = []struct {
 		name: "good sentence",
 		raw:  "$IIDBT,038.94,f,011.87,M,006.41,F*2B",
 		msg: IIDBT{
-			DepthFeet:     38.94,
-			DepthMeters:   11.87,
-			DepthFathoms:  6.41,
+			DepthFeet:    38.94,
+			DepthMeters:  11.87,
+			DepthFathoms: 6.41,
 		},
 	},
 	{

@@ -16,10 +16,10 @@ var iivhwtests = []struct {
 		name: "good sentence",
 		raw:  "$IIVHW,140,T,134,M,05.23,N,09.68,K*55",
 		msg: IIVHW{
-			TrueHeading:      140,
-			MagneticHeading:  134,
-			SpeedKnots:       5.23,
-			SpeedKPH:         9.68,
+			TrueHeading:     140,
+			MagneticHeading: 134,
+			SpeedKnots:      5.23,
+			SpeedKPH:        9.68,
 		},
 	},
 	{

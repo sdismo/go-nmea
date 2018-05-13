@@ -16,7 +16,7 @@ var iimtwtests = []struct {
 		name: "good sentence",
 		raw:  "$IIMTW,10.5,C*17",
 		msg: IIMTW{
-			WaterTemperature:   10.5,
+			WaterTemperature: 10.5,
 		},
 	},
 	{

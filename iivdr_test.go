@@ -16,9 +16,9 @@ var iivdrtests = []struct {
 		name: "good sentence",
 		raw:  "$IIVDR,179.22,T,173.83,M,0.15,N*0C",
 		msg: IIVDR{
-			CurrentTrueDirection:      179.22,
-			CurrentMagneticDirection:  173.83,
-			CurrentSpeedKnots:         0.15,
+			CurrentTrueDirection:     179.22,
+			CurrentMagneticDirection: 173.83,
+			CurrentSpeedKnots:        0.15,
 		},
 	},
 	{

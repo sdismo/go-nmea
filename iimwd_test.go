@@ -16,10 +16,10 @@ var iimwdtests = []struct {
 		name: "good sentence",
 		raw:  "$IIMWD,276.94,T,270.84,M,06.47,N,03.33,M*45",
 		msg: IIMWD{
-			TrueWindDirection:      276.94,
-			MagneticWindDirection:  270.84,
-			WindSpeedKnots:         6.47,
-			WindSpeedMPS:           3.33,
+			TrueWindDirection:     276.94,
+			MagneticWindDirection: 270.84,
+			WindSpeedKnots:        6.47,
+			WindSpeedMPS:          3.33,
 		},
 	},
 	{
