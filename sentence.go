@@ -112,6 +112,8 @@ func Parse(raw string) (Sentence, error) {
 		return newIIMWD(s)
 	case PrefixIIVHW:
 		return newIIVHW(s)
+	case PrefixIIVDR:
+		return newIIVDR(s)
 	case PrefixIIVTG:
 		return newIIVTG(s)
 	default:
